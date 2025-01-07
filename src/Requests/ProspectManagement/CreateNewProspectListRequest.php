@@ -4,9 +4,10 @@ namespace HelgeSverre\Snov\Requests\ProspectManagement;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
+use Saloon\Contracts\Body\HasBody;
 use Saloon\Traits\Body\HasJsonBody;
 
-class CreateNewProspectListRequest extends Request
+class CreateNewProspectListRequest extends Request implements HasBody
 {
     use HasJsonBody;
 

@@ -4,9 +4,10 @@ namespace HelgeSverre\Snov\Requests\EmailFinder;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
+use Saloon\Contracts\Body\HasBody;
 use Saloon\Traits\Body\HasJsonBody;
 
-class GetProfileWithEmailRequest extends Request
+class GetProfileWithEmailRequest extends Request implements HasBody
 {
     use HasJsonBody;
 

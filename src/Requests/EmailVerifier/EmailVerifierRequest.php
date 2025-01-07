@@ -4,9 +4,10 @@ namespace HelgeSverre\Snov\Requests\EmailVerifier;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
+use Saloon\Contracts\Body\HasBody;
 use Saloon\Traits\Body\HasJsonBody;
 
-class EmailVerifierRequest extends Request
+class EmailVerifierRequest extends Request implements HasBody
 {
     use HasJsonBody;
 

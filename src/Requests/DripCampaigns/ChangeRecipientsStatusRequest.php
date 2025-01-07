@@ -4,9 +4,10 @@ namespace HelgeSverre\Snov\Requests\DripCampaigns;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
+use Saloon\Contracts\Body\HasBody;
 use Saloon\Traits\Body\HasJsonBody;
 
-class ChangeRecipientsStatusRequest extends Request
+class ChangeRecipientsStatusRequest extends Request implements HasBody
 {
     use HasJsonBody;
 

@@ -4,9 +4,10 @@ namespace HelgeSverre\Snov\Requests\Webhooks;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
+use Saloon\Contracts\Body\HasBody;
 use Saloon\Traits\Body\HasJsonBody;
 
-class ChangeWebhookStatusRequest extends Request
+class ChangeWebhookStatusRequest extends Request implements HasBody
 {
     use HasJsonBody;
 
